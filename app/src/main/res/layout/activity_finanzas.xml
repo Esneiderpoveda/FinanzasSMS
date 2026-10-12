@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <!-- Encabezado con menú de navegación -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <!-- Menú hamburguesa -->
+            <TextView
+                android:id="@+id/botonMenuFinanzas"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="☰"
+                android:textSize="26sp"
+                android:textColor="#172B4D"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="Abrir menú de navegación" />
+
+            <!-- Espacio central -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Finanzas SMS"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#172B4D"
+                android:paddingStart="12dp" />
+
+            <!-- Botón volver -->
+            <TextView
+                android:id="@+id/botonVolverFinanzas"
+                android:layout_width="72dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="← Volver"
+                android:textSize="15sp"
+                android:textColor="#1565C0"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="Volver a la pantalla anterior" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mis finanzas"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#172B4D" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Análisis de tus movimientos financieros"
+            android:textSize="14sp"
+            android:textColor="#607D8B"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="24dp" />
+
+
+        <!-- Filtros de movimientos financieros -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filtrar movimientos"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#172B4D"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerPeriodo"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Selector de mes y año -->
+        <LinearLayout
+            android:id="@+id/contenedorMesAnio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_marginBottom="20dp">
+
+            <Spinner
+                android:id="@+id/spinnerMes"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:padding="8dp" />
+
+            <Spinner
+                android:id="@+id/spinnerAnio"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:background="#FFFFFF"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total de ingresos"
+            android:textSize="16sp"
+            android:textColor="#455A64" />
+
+        <TextView
+            android:id="@+id/textTotalIngresos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$ 0"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Egresos -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total de egresos"
+            android:textSize="16sp"
+            android:textColor="#455A64" />
+
+        <TextView
+            android:id="@+id/textTotalEgresos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$ 0"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#C62828"
+            android:layout_marginBottom="30dp" />
+
+        <!-- Sección de gráficos -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Movimientos por entidad financiera"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#172B4D"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:id="@+id/contenedorGrafico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="16dp">
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

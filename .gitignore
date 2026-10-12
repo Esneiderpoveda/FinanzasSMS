@@ -1,0 +1,31 @@
+# Archivos generados por Android Studio
+.gradle/
+build/
+**/build/
+
+# Configuración local
+local.properties
+.idea/
+*.iml
+
+# Archivos del sistema
+.DS_Store
+
+# Archivos de firma
+*.jks
+*.keystore
+keystore.properties
+
+# APK y paquetes generados
+*.apk
+*.aab
+
+# Datos privados
+.env
+*.log
+
+# Archivos internos del entorno
+.cg/
+
+# Configuración privada de distribución
+release.properties

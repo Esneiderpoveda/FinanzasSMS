@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Botón volver -->
+        <TextView
+            android:id="@+id/botonVolverLeccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Volver"
+            android:textSize="16sp"
+            android:textColor="#1565C0"
+            android:padding="8dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Número de lección -->
+        <TextView
+            android:id="@+id/textNumeroLeccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LECCIÓN 1"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#1565C0"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/textTituloLeccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Presupuesto personal"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#172B4D"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Contenido educativo -->
+        <TextView
+            android:id="@+id/textContenidoLeccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aquí aparecerá el contenido de la lección."
+            android:textSize="17sp"
+            android:textColor="#37474F"
+            android:lineSpacingExtra="6dp"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Ejemplo práctico -->
+        <TextView
+            android:id="@+id/textEjemploLeccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aquí aparecerá un ejemplo práctico."
+            android:textSize="16sp"
+            android:textColor="#172B4D"
+            android:lineSpacingExtra="5dp"
+            android:background="#E3F2FD"
+            android:padding="20dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Pregunta -->
+        <TextView
+            android:id="@+id/textPreguntaLeccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comprueba lo aprendido"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#172B4D"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Opciones de respuesta -->
+        <RadioGroup
+            android:id="@+id/grupoRespuestas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                android:id="@+id/respuestaUno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Respuesta A"
+                android:textSize="16sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/respuestaDos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Respuesta B"
+                android:textSize="16sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/respuestaTres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Respuesta C"
+                android:textSize="16sp"
+                android:padding="8dp" />
+
+        </RadioGroup>
+
+        <!-- Botón comprobar -->
+        <Button
+            android:id="@+id/botonComprobarRespuesta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comprobar respuesta"
+            android:textAllCaps="false"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Resultado -->
+        <TextView
+            android:id="@+id/textResultadoLeccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F8F9FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <!-- Barra superior con menú de navegación -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#242424"
+            android:paddingHorizontal="16dp">
+
+            <!-- Menú hamburguesa -->
+            <TextView
+                android:id="@+id/botonMenuPerfil"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="☰"
+                android:textSize="26sp"
+                android:textColor="#FFFFFF"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="Abrir menú de navegación" />
+
+            <!-- Título -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Perfil"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:paddingStart="12dp" />
+
+            <!-- Botón volver -->
+            <TextView
+                android:id="@+id/botonVolver"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="‹"
+                android:textSize="30sp"
+                android:textColor="#FFFFFF"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="Volver" />
+
+        </LinearLayout>
+
+
+        <!-- Información del perfil -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="65dp"
+            android:paddingBottom="40dp">
+
+            <!-- Icono del usuario -->
+            <TextView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:gravity="center"
+                android:text="👤"
+                android:textSize="32sp"
+                android:background="#E5E7EB" />
+
+            <!-- Nombre -->
+            <TextView
+                android:id="@+id/textNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tu nombre"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <!-- Profesión o estudios -->
+            <TextView
+                android:id="@+id/textProfesion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tu profesión"
+                android:textSize="14sp"
+                android:textColor="#757575" />
+
+        </LinearLayout>
+
+        <!-- Tarjeta de información personal -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:padding="20dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INFORMACIÓN PERSONAL"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Correo electrónico -->
+            <TextView
+                android:id="@+id/textCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Correo"
+                android:textSize="15sp"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Estudios -->
+            <TextView
+                android:id="@+id/textEstudios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estudios"
+                android:textSize="15sp"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Experiencia -->
+            <TextView
+                android:id="@+id/textExperiencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Experiencia"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <!-- Botón para editar perfil -->
+        <Button
+            android:id="@+id/botonEditarPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Editar perfil" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>

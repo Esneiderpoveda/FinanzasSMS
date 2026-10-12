@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+
+    <!-- Barra superior con menú de navegación -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#242424"
+        android:paddingHorizontal="16dp">
+
+        <!-- Menú hamburguesa -->
+        <TextView
+            android:id="@+id/botonMenuFotos"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="☰"
+            android:textSize="26sp"
+            android:textColor="#FFFFFF"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Abrir menú de navegación" />
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:text="Comprobantes"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Botón volver -->
+        <TextView
+            android:id="@+id/botonVolver"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="‹"
+            android:textSize="30sp"
+            android:textColor="#FFFFFF"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Volver a la pantalla anterior" />
+
+    </LinearLayout>
+
+
+
+    <!-- Contenido -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mis comprobantes"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#212121" />
+
+        <!-- Explicación -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guarda fotografías de tus facturas y recibos para mantener un registro de tus compras."
+            android:textSize="14sp"
+            android:textColor="#757575"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="20dp" />
+
+
+        <!-- Botón agregar factura -->
+        <Button
+            android:id="@+id/botonAgregarFactura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+  Agregar factura"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp" />
+
+
+        <!-- Título de la lista -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facturas guardadas"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:layout_marginBottom="10dp" />
+
+
+        <!-- Mensaje cuando todavía no existen facturas -->
+        <TextView
+            android:id="@+id/textSinFacturas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Todavía no has agregado ningún comprobante."
+            android:textSize="14sp"
+            android:textColor="#757575"
+            android:gravity="center"
+            android:padding="30dp" />
+
+
+        <!-- Lista desplazable de comprobantes -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerFacturas"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>

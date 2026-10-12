@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <!-- Encabezado con menú de navegación -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <!-- Menú hamburguesa -->
+            <TextView
+                android:id="@+id/botonMenuHerramientas"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="☰"
+                android:textSize="26sp"
+                android:textColor="#172B4D"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="Abrir menú de navegación" />
+
+            <!-- Nombre de la aplicación -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Finanzas SMS"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#172B4D"
+                android:paddingStart="12dp" />
+
+            <!-- Botón volver -->
+            <TextView
+                android:id="@+id/botonVolverHerramientas"
+                android:layout_width="72dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="← Volver"
+                android:textSize="15sp"
+                android:textColor="#1565C0"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="Volver a la pantalla anterior" />
+
+        </LinearLayout>
+
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Herramientas financieras"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#172B4D"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Descripción -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Realiza cálculos para organizar mejor tu dinero."
+            android:textSize="15sp"
+            android:textColor="#607080"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Calculadora de ahorro -->
+        <TextView
+            android:id="@+id/herramientaAhorro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🐷  Calculadora de ahorro&#10;&#10;Descubre cuánto puedes acumular ahorrando una cantidad fija cada mes."
+            android:textSize="18sp"
+            android:textColor="#172B4D"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:elevation="3dp"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Calculadora de préstamos -->
+        <TextView
+            android:id="@+id/herramientaPrestamos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💳  Calculadora de préstamos&#10;&#10;Calcula cuotas mensuales e intereses estimados de un préstamo."
+            android:textSize="18sp"
+            android:textColor="#172B4D"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:elevation="3dp"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+</ScrollView>

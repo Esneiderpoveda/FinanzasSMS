@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Botón volver -->
+        <TextView
+            android:id="@+id/botonVolverPrestamos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Volver"
+            android:textSize="16sp"
+            android:textColor="#1565C0"
+            android:padding="8dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💳 Calculadora de préstamos"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#172B4D"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Descripción -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcula la cuota mensual y los intereses aproximados de un préstamo."
+            android:textSize="15sp"
+            android:textColor="#607080"
+            android:layout_marginBottom="25dp" />
+
+        <!-- Capital -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Cuánto dinero necesitas? (COP)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#172B4D"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/inputMontoPrestamo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ejemplo: 5000000"
+            android:inputType="number"
+            android:padding="14dp"
+            android:backgroundTint="#1565C0"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Interés anual -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tasa de interés anual (%)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#172B4D"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/inputInteresPrestamo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ejemplo: 12"
+            android:inputType="numberDecimal"
+            android:padding="14dp"
+            android:backgroundTint="#1565C0"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Plazo -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plazo del préstamo (meses)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#172B4D"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/inputMesesPrestamo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ejemplo: 24"
+            android:inputType="number"
+            android:padding="14dp"
+            android:backgroundTint="#1565C0"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Botón calcular -->
+        <Button
+            android:id="@+id/botonCalcularPrestamo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular préstamo"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:backgroundTint="#1565C0"
+            android:layout_marginBottom="25dp" />
+
+        <!-- Resultado -->
+        <TextView
+            android:id="@+id/textResultadoPrestamo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tu resultado aparecerá aquí"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#16803C"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:padding="24dp"
+            android:elevation="3dp" />
+
+        <!-- Nota informativa -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cálculo orientativo con cuotas fijas y tasa nominal anual. No incluye seguros, comisiones ni otros gastos."
+            android:textSize="13sp"
+            android:textColor="#607080"
+            android:gravity="center"
+            android:layout_marginTop="18dp" />
+
+    </LinearLayout>
+</ScrollView>

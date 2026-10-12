@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="#FFFFFF"
+    android:padding="12dp"
+    android:layout_marginBottom="12dp">
+
+    <!-- Imagen del comprobante -->
+    <ImageView
+        android:id="@+id/imagenFactura"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Imagen del comprobante"
+        android:background="#E0E0E0" />
+
+    <!-- Información -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:id="@+id/textNotaFactura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Compra supermercado"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#212121" />
+
+        <TextView
+            android:id="@+id/textFechaFactura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="07/10/2026 - 23:45"
+            android:textSize="13sp"
+            android:textColor="#757575"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toca para ver el comprobante"
+            android:textSize="12sp"
+            android:textColor="#757575"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

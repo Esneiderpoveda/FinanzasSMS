@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <!-- Encabezado con menú de navegación -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <!-- Menú hamburguesa -->
+            <TextView
+                android:id="@+id/botonMenuEducacion"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="☰"
+                android:textSize="26sp"
+                android:textColor="#172B4D"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="Abrir menú de navegación" />
+
+            <!-- Nombre de la aplicación -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="12dp"
+                android:text="Finanzas SMS"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#172B4D" />
+
+            <!-- Botón volver -->
+            <TextView
+                android:id="@+id/botonVolverEducacion"
+                android:layout_width="72dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="← Volver"
+                android:textSize="15sp"
+                android:textColor="#1565C0"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="Volver a la pantalla anterior" />
+
+        </LinearLayout>
+
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Educación financiera"
+            android:textColor="#172B4D"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aprende a tomar mejores decisiones con tu dinero."
+            android:textColor="#607080"
+            android:textSize="15sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- MÓDULO 1 -->
+        <TextView
+            android:id="@+id/temaPresupuesto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💰  Presupuesto personal\n\nOrganiza tus ingresos y gastos."
+            android:textColor="#172B4D"
+            android:textSize="18sp"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:elevation="3dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- MÓDULO 2 -->
+        <TextView
+            android:id="@+id/temaAhorro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🐷  Ahorro inteligente\n\nConstruye tu fondo de emergencia."
+            android:textColor="#172B4D"
+            android:textSize="18sp"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:elevation="3dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- MÓDULO 3 -->
+        <TextView
+            android:id="@+id/temaDeudas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💳  Créditos y deudas\n\nAprende cómo funcionan los intereses."
+            android:textColor="#172B4D"
+            android:textSize="18sp"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:elevation="3dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- MÓDULO 4 -->
+        <TextView
+            android:id="@+id/temaInversiones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📈  Introducción a las inversiones\n\nDescubre el riesgo y la rentabilidad."
+            android:textColor="#172B4D"
+            android:textSize="18sp"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:elevation="3dp"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>
